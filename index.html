@@ -5,12 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suit Jepang</title>
-    <style>
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Suit Jepang | Batu Gunting Kertas</h1>
+    <div class="music">
+      <audio
+        src="audio/waera - harinezumi [NCS Release].mp3"
+        autoplay
+        loop
+      ></audio>
+      <i class="ti ti-player-play-filled"></i>
+      <i class="ti ti-player-pause-filled"></i>
+    </div>
+    <h1 class="title">Game Suit Jepang | Batu Gunting Kertas</h1>
+    <div class="container">
+      <div class="user-computer">
+        <!-- User -->
+        <div class="user">
+          <div class="user-score">
+            <span class="score">0</span>
+            <div class="user-choose">
+              <div class="user-images">
+                <img src="images/Tanda-tanya.png" alt="?" />
+              </div>
+              <span class="name">Kamu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="versus">VS</div>
+
+        <!-- Computer -->
+        <div class="computer">
+          <div class="comp-score">
+            <span class="score">0</span>
+            <div class="comp-choose">
+              <div class="comp-images">
+                <img src="images/Tanda-tanya.png" alt="?" />
+              </div>
+              <div class="name">
+                <span>Komputer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User choose -->
+      <div class="choise">
+        <div class="images">
+          <img src="images/user/Batu.png" alt="Gambar Batu" />
+        </div>
+        <div class="images">
+          <img src="images/user/Gunting.png" alt="Gambar Gunting" />
+        </div>
+        <div class="images">
+          <img src="images/user/Kertas.png" alt="Gambar Kertas" />
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --colors-1: #fff8dd;
+  --colors-2: #5f9fa0;
+  --colors-3: #ffffff;
+  --colors-4: #fae034;
+  --colors-5: #ed2e52;
+  --colors-6: #4e96d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--colors-1);
+}
+
+.music {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: var(--colors-5);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.music:hover {
+  box-shadow: 0px 0px 10px var(--colors-5);
+}
+
+.music i {
+  color: var(--colors-3);
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+}
+
+.user-computer {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px 0;
+  gap: 2rem;
+}
+
+.user,
+.computer {
+  padding: 20px;
+  background-color: var(--colors-3);
+  border: 5px solid var(--colors-2);
+  border-radius: 20px;
+}
+
+.user-score,
+.comp-score {
+  position: relative;
+}
+
+.user-choose,
+.comp-choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-images,
+.comp-images {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.user-images img,
+.comp-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.score,
+.versus {
+  position: absolute;
+}
+
+.versus {
+  background-color: var(--colors-2);
+  color: var(--colors-3);
+  padding: 20px 30px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.user-score .score,
+.comp-score .score {
+  top: 0;
+  padding: 20px;
+  min-width: 60px;
+  max-width: max-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--colors-3);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.user-score .score {
+  left: 0;
+  background-color: var(--colors-6);
+}
+
+.comp-score .score {
+  right: 0;
+  background-color: var(--colors-4);
+}
+
+/* Style for all images */
+img {
+  display: flex;
+}
+
+.choise {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.choise .images {
+  border: 3px solid var(--colors-2);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--colors-3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.5s;
+  cursor: pointer;
+  width: 100px;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.choise .images:active {
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
+}
+
+.choise .images img {
+  width: 100%;
+}
+
+/* Mobile Display */
+@media screen and (max-width: 765px) {
+  .music {
+    top: 0;
+    right: 0;
+  }
+  
+  .title {
+    font-size: 2.7rem;
+  }
+  
+  .user-computer {
+    grid-template-columns: 380px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 30px 0;
+  }
+  
+  .user {
+    order: 1;
+  }
+  
+  .user-images,
+  .comp-images {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .versus {
+    padding: 10px 20px;
+  }
+  
+  .choise {
+    grid-template-columns: repeat(3, 120px);
+  }
+}

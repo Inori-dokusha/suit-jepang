@@ -65,13 +65,13 @@ function rules() {
   function computerChoice() {
     const randomMath = Math.floor(Math.random() * 3);
     if (randomMath == 0) {
-      comp.setAttribute("src", "/images/Batu.png");
+      comp.setAttribute("src", "images/Batu.png");
       choices1 = "Rock";
     } else if (randomMath == 1) {
-      comp.setAttribute("src", "/images/Gunting.png");
+      comp.setAttribute("src", "images/Gunting.png");
       choices1 = "Scissors";
     } else {
-      comp.setAttribute("src", "/images/Kertas.png");
+      comp.setAttribute("src", "images/Kertas.png");
       choices1 = "Paper";
     }
   }
@@ -80,9 +80,9 @@ function rules() {
   function userChoice() {
     // array source
     const sourceImg = [
-      "/images/Batu.png",
-      "/images/Gunting.png",
-      "/images/Kertas.png",
+      "images/Batu.png",
+      "images/Gunting.png",
+      "images/Kertas.png",
     ];
     const choice = document.querySelector(".choice");
     choice.addEventListener("click", (e) => {

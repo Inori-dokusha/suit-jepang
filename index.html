@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suit Jepang</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suit Jepang</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-  <link rel="stylesheet" href="src/style.css" />
-</head>
-
-<body>
-  <audio loop>
-    <source src="audio/waera - harinezumi [NCS Release].mp3" type="audio/mp3">
-  </audio>
-  <div class="music">
-    <i class="ti ti-player-pause-filled"></i>
-  </div>
-  <h1 class="title">Game Suit Jepang <br>Batu Gunting Kertas</h1>
-  <div class="container">
-    <div class="user-computer">
-      <!-- User -->
-      <div class="user">
-        <div class="user-score">
-          <span class="score">0</span>
-          <div class="user-choice">
-            <div class="user-images">
-              <img src="images/Tanda-tanya.png" alt="?" />
-            </div>
-            <span class="name">Kamu</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="versus">VS</div>
-      
-      <!-- Computer -->
-      <div class="computer">
-        <div class="comp-score">
-          <span class="score">0</span>
-          <div class="comp-choice">
-            <div class="comp-images">
-              <img src="images/Tanda-tanya.png" alt="?" />
-            </div>
-            <div class="name">
-              <span>Komputer</span>
+  <body>
+    <audio loop>
+      <source
+        src="audio/waera - harinezumi [NCS Release].mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <div class="music">
+      <i class="ti ti-player-pause-filled"></i>
+    </div>
+    <h1 class="title">Game Suit Jepang <br />Batu Gunting Kertas</h1>
+    <div class="container">
+      <div class="user-computer">
+        <!-- User -->
+        <div class="user">
+          <div class="user-score">
+            <span class="score">0</span>
+            <div class="user-choice">
+              <div class="user-images">
+                <img src="images/Tanda-tanya.png" alt="?" />
+              </div>
+              <span class="name">Kamu</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- User choose -->
-    <div class="choice">
-      <div class="images">
-        <img class="rock" src="images/Batu.png" alt="Gambar Batu" />
-      </div>
-      <div class="images">
-        <img class="scissors" src="images/Gunting.png" alt="Gambar Gunting" />
-      </div>
-      <div class="images">
-        <img class="paper" src="images/Kertas.png" alt="Gambar Kertas" />
-      </div>
-    </div>
-  </div>
-  <script src="src/script.js"></script>
-</body>
 
+        <div class="versus">VS</div>
+
+        <!-- Computer -->
+        <div class="computer">
+          <div class="comp-score">
+            <span class="score">0</span>
+            <div class="comp-choice">
+              <div class="comp-images">
+                <img src="images/Tanda-tanya.png" alt="?" />
+              </div>
+              <div class="name">
+                <span>Komputer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User choose -->
+      <div class="choice">
+        <div class="images">
+          <img class="rock" src="images/Batu.png" alt="Gambar Batu" />
+        </div>
+        <div class="images">
+          <img class="scissors" src="images/Gunting.png" alt="Gambar Gunting" />
+        </div>
+        <div class="images">
+          <img class="paper" src="images/Kertas.png" alt="Gambar Kertas" />
+        </div>
+      </div>
+    </div>
+    <div class="autor" style="margin-top: 20px">
+      Made with
+      <i style="color: var(--colors-5)" class="ti ti-heart-filled"></i> by
+      <b>Leonardomanalu</b>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
 </html>
